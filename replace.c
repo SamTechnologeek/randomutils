@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* fuck you carmack */
+/* remember to free the returned string */
 char *replace(char *s, char *sub, char *rep)
 {
 	int slen;
