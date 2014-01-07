@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* remember to free the returned string */
 char *filetos(const char *filename)
 {
 	FILE *file = NULL;
@@ -21,15 +20,4 @@ char *filetos(const char *filename)
 
 	fclose(file);
 	return contents;
-}
-
-int main(void)
-{
-	char *s = NULL;
-
-	s = filetos("file");
-	fprintf(stdout, "%s\n", s);
-	s = filetos("filetos.c");
-	fprintf(stdout, "%s\n", s);
-	return 0;
 }
